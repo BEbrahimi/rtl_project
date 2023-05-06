@@ -1,0 +1,48 @@
+#footer-section p{
+    text-align: center;
+    padding: 10px;
+    font-style: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+#footer-aboutus{
+    background: #4d8de5;
+}
+#footer-sign{
+    background: #8bc34a;
+}
+#footer-commant{
+    background:#E91E63;
+}
+.aboutus-text{
+    color: #000000!important;
+    text-align: justify!important;
+    padding: 20px!important;
+}
+#nemad-style{
+    padding: 15px;
+    text-align: center;
+}
+.copy-right-text{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #594f57;
+    padding: 15px!important;
+    background: #191618;
+}
+.copy-right-text i{
+    vertical-align: -5px;
+    margin-left: 6px;
+    color: #ff0000;
+    font-weight: bold;
+    font-style: 22px;
+}
+.slider-random-comment{
+    color: #000!important;
+    text-align: right!important;
+    line-height: 20px;
+}
+#footer-comment-slider{
+    padding-top:10px;
+}

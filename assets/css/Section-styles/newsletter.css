@@ -1,0 +1,12 @@
+.newsletter-title{
+    text-align: center;
+    font-style: 16px;
+    font-weight: bold;
+    padding: 18px;
+
+}
+#newsletter-section{
+    background-image: url("../../img/pattern-bg.png"),
+    linear-gradient(to right,#05e6aa,#1cbdf9);
+    padding: 25px;
+}

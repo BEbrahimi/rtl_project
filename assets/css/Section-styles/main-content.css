@@ -1,0 +1,120 @@
+.content-header{
+    background: #03A9f4;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Byekan;
+}
+.main-content{
+    background: #ffffff;
+    padding: 15px;
+        border-radius: 0 0 3px 3px;
+}
+/*.main-content button,.main-content ul{*/
+    /*width: 300px;*/
+/*}*/
+#btn-filter-content{
+    background: #fff;
+}
+#custom-dropdown{
+    margin-bottom: 20px;
+}
+.post-panel{
+    position: relative;
+}
+.i-date{
+    position:absolute;
+    bottom: 4px;
+    right: 6px;
+    font-size:12px;
+    background: #fff;
+    border-radius:3px;
+    padding: 3px 6px;
+    color: #797979;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #008cba;
+    width:100%;
+    height:0px;
+    bottom: 900%;
+    opacity: .7;
+    transition:height .5s ease;
+}
+.post-panel:hover .overlay{
+    height: 100%;
+    top:0;
+}
+.text-ecxerpt{
+    color: #fff;
+    padding: 10px;
+}
+#post-detail{
+    width: 100%;
+    color: #fff;
+    margin-top: 165px;
+    text-align: center;
+}
+#post-detail li i{
+    vertical-align: -5px;
+}
+.post-panel img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.post-type-like,.post-link{
+    padding: 7px;
+}
+.post-type-like{
+    border-top: 1px dashed #efefef;
+}
+.post-type{
+    font-style: 12px;
+    font-weight: bold;
+    color: #ff0000;
+}
+.post-type i{
+    vertical-align: -9px;
+    font-size: 23px;
+    color: #c6beff;
+    margin-left: 5px;
+}
+.like-btn{
+    float: left;
+    padding: 5px;
+}
+#dislike,#like{
+    vertical-align: -3px;
+}
+span .dislike{
+    margin-left: 10px;
+}
+span.like{
+    float: left;
+}
+i#like{
+    margin-right: 5px;
+}
+i#dislike{
+    color: #ff5b64;
+    margin-left: 5px;
+}
+.all-post{
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+}
+.all-post i{
+    vertical-align: -7px;
+    margin-right: 12px;
+}
+#loader{
+    float: left;
+   /* display:none;*/
+}

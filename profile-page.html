@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+           maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>profile page</title>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/BootSideMenu.css">
+    <link rel="stylesheet" href="assets/css/videojs.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--Js-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/kinetic.js"></script>
+    <script src="assets/js/jquery.final-countdown.min.js"></script>
+    <script src="assets/js/jquery.simpleTicker.js"></script>
+    <script src="assets/js/jquery.totemticker.js"></script>
+    <script src="assets/js/jquery.BootSideMenu.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/bootstrap-show-password.js"></script>
+
+</head>
+<body>
+<!--boot-side-menu-->
+<div id="slide-nav">
+    <div class="user">
+        <img class="img-circle user-avatar-side-nav" src="assets/img/a.jpg" width="70" height="70">
+        <div class="welcome">
+            <div class="text-center"> خوش آمدید:<span>بشیر ابراهیمی</span></div>
+            <div class="text-center"> آخرین باز دید شما:<span>1398/07/21</span></div>
+        </div>
+    </div>
+    <ul class="list-group" id="slide-list">
+        <li><i class="material-icons">dashboard</i><a href="#">پنل کاربری</a></li>
+        <li><i class="material-icons">person</i><a href="#">پروفایل کاربری</a></li>
+        <li><i class="material-icons">border_color</i><a href="#">ارسال مطالب</a></li>
+        <li><i class="material-icons">forum</i><a href="#">نظرات</a>
+            <span class="badge badge-slide-nav">5</span>
+        <li><i class="material-icons">school</i><a href="#">آموزش های من</a>
+            <span class="badge badge-slide-nav">5</span>
+        </li>
+        <li><i class="material-icons" id="exit-icon">power_settings_new</i><a href="#">خروج</a></li>
+    </ul>
+</div>
+<!-- top bar-->
+<div class="container-fluid" id="social-container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6"  >
+            <div id="ticker-fade" class="ticker">
+                <ul>
+                    <li>آیا میدانیستید که این سایت یکی از بهترین سایت آموزشی است؟</li>
+                    <li> آیا میدانید که شاگردان این سایت به 20 هزار نفر میرسد؟</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 collg-6">
+            <ul class="list-inline text-left social-icon">
+                <li><a href="#"><img src="assets/img/facebook.png" height="30" width="30"/> </a> </li>
+                <li><a href="#"><img src="assets/img/instagram%20(1).png" height="30" width="30"/> </a> </li>
+                <li><a href="#"><img src="assets/img/telegram-logo.png" height="30" width="30"/> </a> </li>
+                <li><a href="#"><img src="assets/img/youtube%20(1).png" height="30" width="30"/> </a></li>
+                <li><a href="#"> </a><img src="assets/img/mobile-phone.png" height="30" width="30"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- top menue-->
+<div class="container-fluid" id="topbar-link-container">
+    <div class="container" id="topbar-link1">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <a href="#"><img src="assets/img/Logo.png" height="40" width="120" alt="logo"/></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <ul class="list-inline text-left" id="topbar-link">
+                    <li>0797310317 <i class="material-icons">phone</i></li>
+                    <li><a href="#"> تماس با ما</a> <i class="material-icons">contact_mail</i></li>
+                    <li><a href="#">ورد</a><i class="material-icons"></i>|<a href="#"> عضویت</a><i class="material-icons">perm_identity</i> </li></li>
+                    <li><a href="#"></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-default" id="navbar-custom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">برنامه نویســـــی <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">طراحــی وب</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">گرافیــگ <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">هوش مصنوعــــی</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ورد پرس <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--Login & registration-->
+<div class="container wrapper-free-styles wrapper-margin-top">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12" id="profile-content">
+      <h3>پروفایل کاربری</h3>
+            <div class="col-sm-2 col-md-2 col-lg-2" id="profile-menu">
+                <ul class="nav nav-tabs tabs-left" id="profile-nav">
+                    <li class="active"><a href="#home-profile" data-toggle="tab"><i class="material-icons">perm_identity</i>شناس نامه</a></li>
+                    <li><a href="#profile-course" data-toggle="tab"><i class="material-icons">import_contacts</i>دوره های شما</a></li>
+                    <li><a href="#profile-user-tickets" data-toggle="tab" ><i class="material-icons">receipt</i>ارسال تیکت</a></li>
+                    <li><a href="#profile-user-all-tickets" data-toggle="tab" ><i class="material-icons">record_voice_over</i>پیام های شما</a></li>
+                    <li><a href="#profile-user-transaction" data-toggle="tab" ><i class="material-icons">monetization_on</i>تراکنش های شما</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10" id="tap-divider">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home-profile">
+                        <div class="profile-img-holder text-center">
+                            <img src="assets/img/user.jpg " class="img-circle" width="80"height="80">
+                        </div>
+                        <form class="form-horizontal" id="login-register-form">
+                            <div class="form-group input-container">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <input type="text" class="form-control input-lg" placeholder="نام خود را وارد نماید...">
+                                    <i class="material-icons input-icon">person</i>
+                                </div>
+
+                            </div>
+                            <div class="form-group input-container">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <input type="text" class="form-control input-lg" placeholder="نام خانوادگی خود را وارد نماید...">
+                                    <i class="material-icons input-icon">supervisor_account</i>
+                                </div>
+                            </div>
+                            <div class="form-group input-container">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <input type="text" class="form-control input-lg" placeholder="نام کاربری خود را وارد نماید...">
+                                    <i class="material-icons input-icon">face</i>
+                                </div>
+                            </div>
+                            <div class="form-group input-container">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <input type="email" class="form-control input-lg" placeholder="ایمل خود را وارد نماید...">
+                                    <i class="material-icons input-icon">email</i>
+                                </div>
+                            </div>
+                            <div class="form-group input-container">
+                                <div class="col-sm-6 col-sm-offset-3 text-center">
+                                    <button type="submit" class="btn btn-success btn-block">بروز رسانی</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="tab-pane" id="profile-course">
+                        <ul class="list-group">
+                            <li><a href="#"><i class="material-icons">import_contacts</i>دوه آموزش اسکریپت تویسی PHP</a></li>
+                            <li><a href="#"><i class="material-icons">import_contacts</i>دوه آموزش اسکریپت تویسی PHP</a></li>
+                            <li><a href="#"><i class="material-icons">import_contacts</i>دوه آموزش اسکریپت تویسی PHP</a></li>
+                            <li><a href="#"><i class="material-icons">import_contacts</i>دوه آموزش اسکریپت تویسی PHP</a></li>
+                            <li><a href="#"><i class="material-icons">import_contacts</i>دوه آموزش اسکریپت تویسی PHP</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="profile-user-tickets">
+                   <form>
+                       <div class="row">
+                           <div class="col-sm-8">
+                               <div class="form-group">
+                                   <label>عنوان تیکت*</label>
+                                   <input type="text" class="form-control" placeholder="عنوان تیکت...">
+                               </div>
+                           </div>
+                           <div class="col-sm-4">
+                               <div class="form-group">
+                                   <label>اولویت*</label>
+                                  <select class="form-control">
+                                    <option value="0">عادی</option>
+                                    <option value="1">مهم</option>
+                                    <option value="2">بسیار مهم</option>
+                                  </select>
+                               </div>
+                           </div>
+                           <div class="col-sm-12">
+                               <div class="form-group">
+                                   <label>پیام*</label>
+                                   <textarea class="form-control" rows="10"></textarea>
+                               </div>
+                           </div>
+                       </div>
+                   </form>
+                    </div>
+                    <div class="tab-pane" id="profile-user-all-tickets">
+                        <div class="alert alert-danger text-center">در حال حاظر پیامی ندارد!</div>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-info">
+                                <div class="panel-heading"id="#">
+                                  <a href="#section1" data-toggle="collapse" data-parent="accordion">موضوع تیکت : در خواست راهنمایی در دور مورد کوئری استرینگ ها</a>
+                                <span class="ticket-no">شماره تیکت: 121321321</span>
+                                </div>
+                                <div id="section1" class="panel-collapse collapse in custom-panel-collapse">
+                                    <div class="sent-details-wrapper">
+                                        <img class="img-circle sender-ticket-image" width="50" height="60" src="assets/img/bashir.JPG">
+                                        <span>ارسال شده در تاریخ : 2-2-1398</span><span><a href="#ticket-answer1" class="btn btn-danger sent-answer-ticket" data-toggle="collapse" >ارسال پاسخ</a></span>
+
+                                        <div class="ticket-text">
+                                            <p>
+                                                تشکر میکنم از جناب ابراهیمی بابت زمان وانرژی که گذاشتن بابت تهیه این دوره بی نظیر،انقدر مطالب کامل و با جزئیات بیان شده که دیدنش برای چند بار هم لذت بخشه،واقعا با همه وجود خوشحالم که این دوره ور تهیه  کردم امیدوارم جناب ابراهیمی و تیم گرین سایت به همین صورت فعالیت خودشونو ادامه بدن
+                                            </p>
+                                        </div>
+                                        <div class="collapse ticket-answer" id="ticket-answer1">
+                                           <form>
+                                               <div class="alert alert-danger text-center">پیام شما با موفقیت ارسال شد و دوباره پاسخ داده خواهد شد.</div>
+                                               <div class="form-group">
+                                               <textarea class="form-control" rows="10" placeholder="نظر تان را بنوسید..."></textarea>
+                                               </div>
+                                               <div class="form-group text-left">
+                                               <input type="submit" class="btn btn-success" value="ارسال پیام">
+                                               </div>
+                                           </form>
+                                        </div>
+                                    </div>
+                                    <div class="sent-details-wrapper">
+                                        <img class="img-circle sender-ticket-image" width="50" height="60" src="assets/img/bashir.JPG">
+                                        <span>ارسال شده در تاریخ : 2-2-1398</span><span><a href="#ticket-answer2" class="btn btn-danger sent-answer-ticket" data-toggle="collapse" >ارسال پاسخ</a></span>
+
+                                        <div class="ticket-text">
+                                            <p>
+                                                تشکر میکنم از جناب ابراهیمی بابت زمان وانرژی که گذاشتن بابت تهیه این دوره بی نظیر،انقدر مطالب کامل و با جزئیات بیان شده که دیدنش برای چند بار هم لذت بخشه،واقعا با همه وجود خوشحالم که این دوره ور تهیه  کردم امیدوارم جناب ابراهیمی و تیم گرین سایت به همین صورت فعالیت خودشونو ادامه بدن
+                                            </p>
+                                        </div>
+                                        <div class="collapse ticket-answer" id="ticket-answer2">
+                                            <form>
+                                                <div class="alert alert-danger text-center">پیام شما با موفقیت ارسال شد و دوباره پاسخ داده خواهد شد.</div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="10" placeholder="نظر تان را بنوسید..."></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <input type="submit" class="btn btn-success" value="ارسال پیام">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="sent-details-wrapper">
+                                        <img class="img-circle sender-ticket-image" width="50" height="60" src="assets/img/bashir.JPG">
+                                        <span>ارسال شده در تاریخ : 2-2-1398</span><span><a href="#ticket-answer3" class="btn btn-danger sent-answer-ticket" data-toggle="collapse" >ارسال پاسخ</a></span>
+
+                                        <div class="ticket-text">
+                                            <p>
+                                                تشکر میکنم از جناب ابراهیمی بابت زمان وانرژی که گذاشتن بابت تهیه این دوره بی نظیر،انقدر مطالب کامل و با جزئیات بیان شده که دیدنش برای چند بار هم لذت بخشه،واقعا با همه وجود خوشحالم که این دوره ور تهیه  کردم امیدوارم جناب ابراهیمی و تیم گرین سایت به همین صورت فعالیت خودشونو ادامه بدن
+                                            </p>
+                                        </div>
+                                        <div class="collapse ticket-answer" id="ticket-answer3">
+                                            <form>
+                                                <div class="alert alert-danger text-center">پیام شما با موفقیت ارسال شد و دوباره پاسخ داده خواهد شد.</div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="10" placeholder="نظر تان را بنوسید..."></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <input type="submit" class="btn btn-success" value="ارسال پیام">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="sent-details-wrapper">
+                                        <img class="img-circle sender-ticket-image" width="50" height="60" src="assets/img/bashir.JPG">
+                                        <span>ارسال شده در تاریخ : 2-2-1398</span><span><a href="#ticket-answer4" class="btn btn-danger sent-answer-ticket" data-toggle="collapse" >ارسال پاسخ</a></span>
+
+                                        <div class="ticket-text">
+                                            <p>
+                                                تشکر میکنم از جناب ابراهیمی بابت زمان وانرژی که گذاشتن بابت تهیه این دوره بی نظیر،انقدر مطالب کامل و با جزئیات بیان شده که دیدنش برای چند بار هم لذت بخشه،واقعا با همه وجود خوشحالم که این دوره ور تهیه  کردم امیدوارم جناب ابراهیمی و تیم گرین سایت به همین صورت فعالیت خودشونو ادامه بدن
+                                            </p>
+                                        </div>
+                                        <div class="collapse ticket-answer" id="ticket-answer4">
+                                            <form>
+                                                <div class="alert alert-danger text-center">پیام شما با موفقیت ارسال شد و دوباره پاسخ داده خواهد شد.</div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="10" placeholder="نظر تان را بنوسید..."></textarea>
+                                                </div>
+                                                <div class="form-group text-left">
+                                                    <input type="submit" class="btn btn-success" value="ارسال پیام">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                     </div>
+                            </div>
+                            <div class="panel panel-info">
+                                <div class="panel-heading"id="#">
+                                    <a href="#section2" data-toggle="collapse" data-parent="accordion">موضوع تیکت : سوال در مورد نحوه شرکت در دوره </a>
+                                </div>
+                                <div id="section2" class="panel-collapse collapse custom-panel-collapse">sjlfjsdfj</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile-user-transaction">
+                        <table class="table table-bordered table-hover table-responsive" id="user-transaction-table">
+                            <tr>
+                                <th>شماره سفارش</th>
+                                <th>شماره تراکنش</th>
+                                <th>تاریخ پرداخت</th>
+                                <th>زمان پرداخت</th>
+                                <th>تاریخ پرداخت</th>
+                                <th>مبلغ</th>
+                                <th>وضعیت</th>
+                            </tr>
+                            <tr>
+                                <td>5646546546</td>
+                                <td>546464646</td>
+                                <td>09-02-1398</td>
+                                <td>12:30:23</td>
+                                <td>09-02-1398</td>
+                                <td>89000</td>
+                                <td>پرداخت شده</td>
+                            </tr>
+                            <tr>
+                                <td>5646546546</td>
+                                <td>546464646</td>
+                                <td>09-02-1398</td>
+                                <td>12:30:23</td>
+                                <td>09-02-1398</td>
+                                <td>89000</td>
+                                <td>پرداخت شده</td>
+                            </tr>
+                            <tr>
+                                <td>5646546546</td>
+                                <td>546464646</td>
+                                <td>09-02-1398</td>
+                                <td>12:30:23</td>
+                                <td>09-02-1398</td>
+                                <td>89000</td>
+                                <td>پرداخت شده</td>
+                            </tr>
+                            <tr>
+                                <td>5646546546</td>
+                                <td>546464646</td>
+                                <td>09-02-1398</td>
+                                <td>12:30:23</td>
+                                <td>09-02-1398</td>
+                                <td>89000</td>
+                                <td>پرداخت شده</td>
+                            </tr>
+                            <tr>
+                                <td>5646546546</td>
+                                <td>546464646</td>
+                                <td>09-02-1398</td>
+                                <td>12:30:23</td>
+                                <td>09-02-1398</td>
+                                <td>89000</td>
+                                <td>پرداخت شده</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+</div>
+<!--newsletter section-->
+<div class="container-fluid wrapper-margin-top" id="newsletter-section">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-md-offset-4 col-sm-offset-4 col-lg-offset-4">
+            <p class="newsletter-title">با اشتراک در خبرنامه از آخرین عناوین آموزشی ما آگاه شوید...</p>
+            <form class="form-inline">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control" placeholder="ایمل خود را وارد نمایید...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-info"type="button">اشتراک</button>
+
+                </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Footer Section-->
+<div class="container-fluid" id="footer-section">
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-aboutus"><p>درباره ما</p></div>
+            <p class="aboutus-text">
+                گیرین سایت مرجعی تخصصی برای یادگیری طراحی و برنامه نویسی است. ما در گرین سایت با بهره گیری از نیروهای متخصص،با تجربه و با تحصیلات آکادمیک بالا، تمام تلاش خود را برای تهیه و تولید آموزش های با کیفیت و حرفه ای انجام می دهیم،پشنهاد می کنم تا حرفه ای شدن با گرین سایت باشد!
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-sign"><p>نماد ها</p></div>
+            <ul class="list-inline" id="nemad-style">
+                <li><a href="#"><img src="assets/img/Bar_Code.png" height="100" width="100"/></a></li>
+                <li><a href="#"><img src="assets/img/WESS.png" height="100" width="100"/> </a></li>
+                <li><a href="#"><img src="assets/img/ghrja.png" height="100" width="100"/> </a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-commant"><p>نظرات کاربران</p></div>
+            <div id="footer-comment-slider" class="carousel slide"  data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-circle user-avarar margin-center" src="assets/img/user.png" width="40" height="40"/>
+                        <p class="slider-random-comment">
+                            دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img class="img-circle user-avarar margin-center" src="assets/img/user.jpg" width="40" height="40"/>
+                        <p class="slider-random-comment">
+                            دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img class="img-circle user-avarar margin-center" src="assets/img/user.png" width="40" height="40"/>
+                        <p class="slider-random-comment">
+                            دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <row>
+            <div class="col-md-12 col-sm-12 col-lg-12 padding-reset">
+                <p class="copy-right-text">
+                    <i class="material-icons">copyright</i>
+                    کلیه حقوق محصولات و محتوای این سایت متعلق به گرین سایت می باشد و هر گونه کپی برداری از محتوا و محصولات سایت غیر مجاز و بدون رضایت ماست.
+                </p>
+            </div>
+        </row>
+    </div>
+</div>
+<script src="assets/js/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0,
+           maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> صحفه اصلی</title>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/BootSideMenu.css">
+   <!--Js-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/kinetic.js"></script>
+    <script src="assets/js/jquery.final-countdown.min.js"></script>
+    <script src="assets/js/jquery.simpleTicker.js"></script>
+    <script src="assets/js/jquery.totemticker.js"></script>
+    <script src="assets/js/jquery.BootSideMenu.js"></script>
+</head>
+<body>
+<!--boot-side-menu-->
+<div id="slide-nav">
+    <div class="user">
+        <img class="img-circle user-avatar-side-nav" src="assets/img/a.jpg" width="70" height="70">
+        <div class="welcome">
+            <div class="text-center"> خوش آمدید:<span>بشیر ابراهیمی</span></div>
+            <div class="text-center"> آخرین باز دید شما:<span>1398/07/21</span></div>
+        </div>
+    </div>
+    <ul class="list-group" id="slide-list">
+        <li><i class="material-icons">dashboard</i><a href="#">پنل کاربری</a></li>
+        <li><i class="material-icons">person</i><a href="#">پروفایل کاربری</a></li>
+        <li><i class="material-icons">border_color</i><a href="#">ارسال مطالب</a></li>
+        <li><i class="material-icons">forum</i><a href="#">نظرات</a>
+        <span class="badge badge-slide-nav">5</span>
+        <li><i class="material-icons">school</i><a href="#">آموزش های من</a>
+            <span class="badge badge-slide-nav">5</span>
+    </li>
+        <li><i class="material-icons" id="exit-icon">power_settings_new</i><a href="#">خروج</a></li>
+    </ul>
+   </div>
+<!-- top bar-->
+<div class="container-fluid" id="social-container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6"  >
+          <div id="ticker-fade" class="ticker">
+              <ul>
+                  <li>آیا میدانیستید که این سایت یکی از بهترین سایت آموزشی است؟</li>
+                  <li> آیا میدانید که شاگردان این سایت به 20 هزار نفر میرسد؟</li>
+              </ul>
+
+          </div>
+      </div>
+        <div class="col-sm-12 col-md-6 collg-6">
+            <ul class="list-inline text-left social-icon">
+                <li><a href="https://www.facebook.com/profile.php?id=100011161202323" target="_blank"><img src="assets/img/facebook.png" height="30" width="30"/> </a> </li>
+                <li><a href="#"><img src="assets/img/instagram%20(1).png" height="30" width="30"/> </a> </li>
+                <li><a href="#"><img src="assets/img/telegram-logo.png" height="30" width="30"/> </a> </li>
+                <li><a href="https://www.youtube.com/channel/UCeBJfqcyOTtSjV61BRH77sw?disable_polymer=true" target="_blank"><img src="assets/img/youtube%20(1).png" height="30" width="30"/> </a></li>
+                <li><a href="#"> </a><img src="assets/img/mobile-phone.png" height="30" width="30"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- top menue-->
+<div class="container-fluid" id="topbar-link-container">
+    <div class="container" id="topbar-link1">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <a href="#"><img src="assets/img/Logo.png" height="40" width="120" alt="logo"/></a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <ul class="list-inline text-left" id="topbar-link">
+                <li>0797310317 <i class="material-icons">phone</i></li>
+                <li><a href="#"> تماس با ما</a> <i class="material-icons">contact_mail</i></li>
+                <li><a href="#">ورد</a><i class="material-icons"></i>|<a href="#"> عضویت</a><i class="material-icons">perm_identity</i> </li></li>
+                <li><a href="#"></a></li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar navbar-default" id="navbar-custom">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">برنامه نویســـــی <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">طراحــی وب</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">گرافیــگ <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">هوش مصنوعــــی</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ورد پرس <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--hero Header-->
+<div class="container-fluid" id="hero-header" >
+    <div class="row">
+    <h2 >خودساختگی ، کسب تجربه ، ورود به بازار کار</h2>
+    <h2>با استاتید مجرب و کار آموزده در خود آموزش گرین سایت</h2>
+    <h2 class="pulsate">یک تخفیف ویژه به مناسبت ماه محرم و شهادت حسین(ع)</h2>
+    </div>
+    <div class="row">
+        <div class="bounce text-center"><i class="material-icons">keyboard_arrow_down</i> </div>
+    </div>
+    <div  class="row">
+        <div class="countdown countdown-container container" id="countdown-custom">
+            <div class="clock row">
+                <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-seconds" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-seconds type-time">ثانیه</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+
+                <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-minutes" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-minutes type-time">دقیقه</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+                <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-hours" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-hours type-time">ساعت</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+                <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+                    <div class="wrap">
+                        <div class="inner">
+                            <div id="canvas-days" class="clock-canvas"></div>
+
+                            <div class="text">
+                                <p class="val">0</p>
+                                <p class="type-days type-time">روز</p>
+                            </div><!-- /.text -->
+                        </div><!-- /.inner -->
+                    </div><!-- /.wrap -->
+                </div><!-- /.clock-item -->
+            </div><!-- /.clock -->
+        </div><!-- /.countdown-wrapper -->
+    </div>
+    <dov class="row" id="coustom-row-box">
+    <div class="col-md-6 col-sm-6 col-lg-6 col-md-offset-3 col-sm-offset-3 col-lg-offset-3">
+    <div class="input-group">
+        <input type="text" class="form-control"placeholder="محل جستجو">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-info">جستجو</button>
+        </span>
+    </div>
+    </div>
+</dov>
+    <div class="row" id="cunstom-statices">
+       <div class="col-sm-6 col-md-6 col-lg-6 col-sm-offset-3 col-md-offset-3 col-lg-offset-3">
+           <div class="col-md-4 col-sm-4 col-lg-4">
+               <i class="material-icons">library_books</i><samp>98 مقالات درسی</samp>
+           </div>
+           <div class="col-md-4 col-sm-4 col-lg-4">
+               <i class="material-icons"> supervisor_account</i><samp>210 دانشجو</samp>
+           </div>
+           <div class="col-md-4 col-sm-4 col-lg-4">
+               <i class="material-icons">access_time</i><samp>120 دقیقه آموزش </samp>
+           </div>
+       </div>
+    </div>
+   </div>
+<!--slider-section and info boxes-->
+<div class="container" id="custom-slider-info-container">
+        <div class="row">
+            <div class="col-sm-12 col-mg-4 col-lg-4" id="info-section">
+             <div class="wrapper-free-styles">
+                 <div class="info-box">
+                     <div class="info-title-section">
+                         <i class="material-icons">info_outline</i>اطلاعیه ها
+                     </div>
+                     <div class="info-text">
+                         <span>شروع کلاس های جدید برنامه های HTML,CSS و PHP آغاز شد.</span>
+                         <span class="info-date">1398-7-6<i class="material-icons">date_range</i></span>
+                     </div>
+                 </div>
+                 <div class="info-box">
+                     <div class="info-title-section">
+                         <i class="material-icons">info_outline</i>اطلاعیه ها
+                     </div>
+                     <div class="info-text">
+                         <span>شروع کلاس های جدید برنامه های HTML,CSS و PHP آغاز شد.</span>
+                         <span class="info-date">1398-7-6<i class="material-icons">date_range</i></span>
+                     </div>
+                 </div>
+                 <div class="info-box">
+                     <div class="info-title-section">
+                         <i class="material-icons">info_outline</i>اطلاعیه ها
+                     </div>
+                     <div class="info-text">
+                         <span>شروع کلاس های جدید برنامه های HTML,CSS و PHP آغاز شد.</span>
+                         <span class="info-date">1398-7-6<i class="material-icons">date_range</i></span>
+                     </div>
+                 </div>
+             </div>
+            </div>
+          <div class="col-sm-12 col-mg-8 col-lg-8">
+              <!-- slider indicators-->
+              <div id="carousel" class="carousel slide" date-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel" data-slide-to="1"></li>
+                      <li data-target="#carousel" data-slide-to="2"></li>
+                  </ol>
+                 <!--image wrapper--> 
+                  <div class="carousel-inner" id="custom-carousel-inner">
+                      <div class="item active ">
+                         <img src="assets/img/1.jpg" height="400" width="800"/>
+                      </div>
+                      <div class="item">
+                          <img src="assets/img/2.jpg"/></div>
+                      <div class="item">
+                         <img src="assets/img/3.jpg" height="400" width="800"/></div>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+     </div>
+<!--main content-->
+<div class="container wrapper-margin-top">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-12 col-md-12 col-lg-12 main-wrapper wrapper-free-styles">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <p class="lesson-title"><i class="material-icons">library_books</i>جدید ترین مطالب آموزشی</p>
+                   <div class="post-publish">
+                        <ul class="list-group post-publish-list">
+                            <li>
+                                <span class="list-icon"></span>
+                                <div><a href="#">دوره مجازی اسکریپت نویسی Php: جلسه اول-معرفی دوره</a></div>
+                                <div class="post-publish-date">
+                                    <span>
+                                        1398-7-7<i class="material-icons">date_range</i>
+                                    </span>
+                                    <span style="margin-right:40px;">32 دقیقه<i class="material-icons">alarm</i></span>
+                                </div>
+                            </li>
+                            <li><span class="list-icon"></span>
+                                <div><a href="#">دوره مجازی اسکریپت نویسی Php: جلسه اول-معرفی دوره</a></div>
+                            <div class="post-publish-date">
+                                <span>1398-7-7<i class="material-icons">date_range</i>
+                                </span>
+                                <span style="margin-right:40px;">32 دقیقه<i class="material-icons">alarm</i></span>
+                            </div>
+                            </li>
+                            <li>
+                                <span class="list-icon"></span>
+                                <div><a href="#">دوره مجازی اسکریپت نویسی Php: جلسه اول-معرفی دوره</a></div>
+                                <div class="post-publish-date">
+                                    <span>
+                                        1398-7-7<i class="material-icons">date_range</i>
+                                    </span>
+                                    <span style="margin-right:40px;">32 دقیقه<i class="material-icons">alarm</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="list-icon"></span>
+                                <div><a href="#">دوره مجازی اسکریپت نویسی Php: جلسه اول-معرفی دوره</a></div>
+                                <div class="post-publish-date">
+                                    <span>
+                                        1398-7-7<i class="material-icons">date_range</i>
+                                    </span>
+                                    <span style="margin-right:40px;">32 دقیقه<i class="material-icons">alarm</i></span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="list-icon"></span>
+                                <div><a href="#">دوره مجازی اسکریپت نویسی Php: جلسه اول-معرفی دوره</a></div>
+                                <div class="post-publish-date">
+                                    <span>
+                                        1398-7-7<i class="material-icons">date_range</i>
+                                    </span>
+                                    <span style="margin-right:40px;">32 دقیقه<i class="material-icons">alarm</i></span>
+                                </div>
+                            </li>
+                           
+                            
+                        </ul>
+                      
+                   </div>
+                     </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <p class="random-title"><i class="material-icons">refresh</i>مطالب دوباره</p>
+                        <div class="post-random">
+                            <ul class="list-group" id="vertical-ticker">
+                                <li><a href="#"><span><img class="img-thumbnail" src="assets/img/php.jpg" width="50" height="50" alt="img"/></span>
+                                        دوره طراحی تجربه کاربری (جلسه یازدهم): کاربردپذیری و اصول آن
+                                    </a></li>
+                                <li>
+                                    <a href="#">
+                                        <span><img class="img-thumbnail" src="assets/img/php.jpg" width="50" height="50" alt="img" /></span>
+                                        دوره طراحی تجربه کاربری (جلسه یازدهم): کاربردپذیری و اصول آن
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img class="img-thumbnail" src="assets/img/php.jpg" width="50" height="50" alt="img" /></span>
+                                        دوره طراحی تجربه کاربری (جلسه یازدهم): کاربردپذیری و اصول آن
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><img class="img-thumbnail" src="assets/img/php.jpg" width="50" height="50" alt="img" /></span>
+                                        دوره طراحی تجربه کاربری (جلسه یازدهم): کاربردپذیری و اصول آن
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+<!--course & poll section-->
+<div class="container wrapper-margin-top">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="content-header">مطالب جــــدید</div>
+            <div class="main-content wrapper-free-styles">
+                <div class="dropdown" id="custom-dropdown">
+                    <button id="btn-filter-content" class="btn btn-default dropdown-toggle" type="button" id="content-fillter" data-toggle="dropdown">
+                        عناوین آموزشی جدید...
+                        <span class="caret"></span>
+                    </button>
+                <ul class="dropdown-menu">
+                    <li><a href="all-post">همه مطالب</a></li>
+                    <li><a href="test">محبوب ترین مطالب</a></li>
+                    <li><a href="#">پر بازدید ترین مطالب</a></li>
+                </ul>
+                    <img src="assets/img/loader.gif" height="30" width="30" id="loader"/>
+                </div>
+
+                <div class="load-content">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                           <div class="panel panel-default">
+                               <div class="post-panel">
+                                   <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                   <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                            <div class="overlay">
+                                <div class="text-ecxerpt">
+                                    در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                </div>
+                                <ul class="list-inline text-center" id="post-detail">
+                                    <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                </ul>
+                            </div>
+                               </div>
+                               <div class="post-link">
+                                   <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                    <div class="post-type-like">
+                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                    <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                    </div>
+                               </div>
+                           </div>
+       </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                           <div class="panel panel-default">
+                               <div class="post-panel">
+                                   <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                   <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                            <div class="overlay">
+                                <div class="text-ecxerpt">
+                                    در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                </div>
+                                <ul class="list-inline text-center" id="post-detail">
+                                    <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                </ul>
+                            </div>
+                               </div>
+                               <div class="post-link">
+                                   <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                    <div class="post-type-like">
+                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                    <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                    </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="panel panel-default">
+                                <div class="post-panel">
+                                    <img class="img-responsive" src="assets/img/Simple1.jpg" width="300px" height="300px" />
+
+                                    <span class="i-date">1398-9-9<i class="material-icons">date_range</i></span>
+                                    <div class="overlay">
+                                        <div class="text-ecxerpt">
+                                            در جلسه اول این دوره آموزشی می پردازیم به مفاهم و کلیات ورد پرس
+                                        </div>
+                                        <ul class="list-inline text-center" id="post-detail">
+                                            <li><i class="material-icons">perm_identity</i></li><span>
+                                    بشیر ابراهیمی
+                                </span> <li><i class="material-icons">remove_red_eye</i></li><span>
+                                    1253
+                                </span> <li><i class="material-icons">comment</i></li><span>
+                                    1234
+                                </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="post-link">
+                                    <a href="#">جلسه اول اسکریپت نویسی PhP</a>
+                                    <div class="post-type-like">
+                                        <span class="post-type"><i class="material-icons">view_headline</i>رایگان</span>
+                                        <span class="like-btn">
+                        <span class="dislike"><a href="#"><i class="material-icons" id="dislike">thumb_down</i></a>10</span>
+                        <span class="like">100<a href="#"><i class="material-icons" id="like">thumb_up</i></a></span>
+
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="all-post">
+                    <a href="#" class="btn btn-success">همه مطالب<i class="material-icons">arrow_back</i> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container wrapper-margin-top">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="col-sm-12 col-md-12 col-lg-12 main-wrapper box-shadow" >
+    <div class="section-title">
+        <h5>دوره های آموزشی</h5>
+    </div>
+                <div class="course-info">
+                    <div class="course-thumbnail">
+                        <img class="img-responsive" src="assets/img/course1.jpg">
+                    </div>
+                    <div class="course-detail">
+                        <h3 class="text-center course-title">جامع ترین دوره آموزش اسکریپت نویسی PHP</h3>
+                        <a href="#course-meta-section" data-toggle="collapse" class="course-info-tooltip"><i class="material-icons" data-toggle="tooltip"data-placement="top" title="جزئیات بشتر...">more_horiz</i></a>
+                    <div class="collapse course-meta" id="course-meta-section">
+                        <ul class="list-inline text-center">
+                            <li><i class="material-icons">person</i>مدرس:<span> بشیر ابراهیمی</span></li>
+                            <li><i class="material-icons">alarm</i>طول دوره:<span>35 ساعت </span></li>
+                            <li><i class="material-icons">clear_all</i>وضعیت دوره:<span>پیش ثبت نام</span></li>
+                            <li><i class="material-icons">school</i>دانشجویان:<span><span>123</span>نفر</span></li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-success">ثبت نام این دوره</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="course-info">
+                    <div class="course-thumbnail">
+                        <img class="img-responsive" src="assets/img/course1.jpg">
+                    </div>
+                    <div class="course-detail">
+                        <h3 class="text-center course-title">جامع ترین دوره آموزش اسکریپت نویسی PHP</h3>
+                        <a href="#course-meta-section-1" data-toggle="collapse" class="course-info-tooltip"><i class="material-icons" data-toggle="tooltip"data-placement="top" title="جزئیات بشتر...">more_horiz</i></a>
+                        <div class="collapse course-meta" id="course-meta-section-1">
+                            <ul class="list-inline text-center">
+                                <li><i class="material-icons">person</i>مدرس:<span> بشیر ابراهیمی</span></li>
+                                <li><i class="material-icons">alarm</i>طول دوره:<span>35 ساعت </span></li>
+                                <li><i class="material-icons">clear_all</i>وضعیت دوره:<span>پیش ثبت نام</span></li>
+                                <li><i class="material-icons">school</i>دانشجویان:<span><span>123</span>نفر</span></li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">ثبت نام این دوره</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-info">
+                    <div class="course-thumbnail">
+                        <img class="img-responsive" src="assets/img/course1.jpg">
+                    </div>
+                    <div class="course-detail">
+                        <h3 class="text-center course-title">جامع ترین دوره آموزش اسکریپت نویسی PHP</h3>
+                        <a href="#course-meta-section-2" data-toggle="collapse" class="course-info-tooltip"><i class="material-icons" data-toggle="tooltip"data-placement="top" title="جزئیات بشتر...">more_horiz</i></a>
+                        <div class="collapse course-meta" id="course-meta-section-2">
+                            <ul class="list-inline text-center">
+                                <li><i class="material-icons">person</i>مدرس:<span> بشیر ابراهیمی</span></li>
+                                <li><i class="material-icons">alarm</i>طول دوره:<span>35 ساعت </span></li>
+                                <li><i class="material-icons">clear_all</i>وضعیت دوره:<span>پیش ثبت نام</span></li>
+                                <li><i class="material-icons">school</i>دانشجویان:<span><span>123</span>نفر</span></li>
+                            </ul>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">ثبت نام این دوره</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" id="more-course">
+                    <a href="#" class="btn btn-info">موارد بشتر...</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-12 col-lg-12 main-wrapper">
+                <div class="section-title">
+                    <h5>نظر سنجی</h5>
+                </div>
+                            <!--Vote Section-->
+                    <div class="vote">
+                        <div class="alert alert-danger text-center">
+                            با برگزاری کدامیک از دوره های زیر موافقید؟
+                        </div>
+                    </div>
+                <!--
+                <div class="tasks-progressbar">
+                    <p>اسکریبت نویسی PHP</p>
+                    <div class="progress active">
+                        <div>
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 40%;">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>برنامه نویسی پایتون</p>
+                    <div class="progress active">
+                        <div>
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 60%;">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>طراحی قالب های وردپرس</p>
+                    <div class="progress active">
+                        <div>
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 20%;">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>پلاگین نویسی وردپرس</p>
+                    <div class="progress active">
+                        <div>
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 44%;">
+                                <span>44%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>اصول طراحی قالب در فتوشاپ</p>
+                    <div class="progress active">
+                        <div>
+                            <div class="progress-bar progress-bar-success"
+                                 style="width:52%;">
+                                <span>52%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <form class="list-group">
+                    <label class="label-container">
+                        <p>اسکریبت نویسی PHP</p>
+                        <input type="radio"name="radio" checked="checked">
+                   <span class="checkmark"></span>
+                    </label>
+                    <label class="label-container">
+                      <p class="margin-top-sec"> برنامه نویسی پایتون</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="label-container">
+                        <p class="margin-top-sec">طراحی قالب وردپرس</p>
+                        <input type="radio"name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="label-container">
+                        <p class="margin-top-sec">پلاگین نویسی وردپرس</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="label-container">
+                        <p class="margin-top-sec">اصول طراحی قالب در فتوشاپ</p>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <div class="text-center btn-vote">
+                        <input type="submit" class="btn btn-success btn-sm" value="ثبت رای">
+                    </div>
+                </form>
+                <!--Task Section-->
+                <div class="section-title">
+                    <h5>پشرفت دوره ها</h5>
+                </div>
+                <div class="tasks-progressbar">
+                    <p>دوره آموزشی برنامه نویسی شی گرا</p>
+                    <div class="progress active">
+                        <div class="progress-striped">
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 40%;">
+
+                                <span>40%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>دوره آموزشی برنامه نویسی PHP</p>
+                    <div class="progress active">
+                        <div class="progress-striped">
+                            <div class="progress-bar progress-bar-danger"
+                                 style="width: 60%;">
+
+                                <span>60%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>دوره آموزشی برنامه نویسی HTML & CSS</p>
+                    <div class="progress active">
+                        <div class="progress-striped">
+                            <div class="progress-bar progress-bar-info"
+                                 style="width: 80%;">
+
+                                <span>80%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>دوره آموزشی برنامه نویسی پایتون</p>
+                    <div class="progress active">
+                        <div class="progress-striped">
+                            <div class="progress-bar progress-bar-success"
+                                 style="width: 90%;">
+
+                                <span>90%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p>دوره آموزشی برنامه نویسی JS</p>
+                    <div class="progress active">
+                        <div class="progress-striped">
+                            <div class="progress-bar progress-bar-danger"
+                                 style="width: 100%;">
+
+                                <span>100%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--ads section-->
+                <div class="section-title">
+                    <h5>تبلــــــیغات</h5>
+                </div>
+                <div class="ads">
+                    <a href="#"><img class="img-responsive" src="assets/img/Benar.jpg" alt="ads"/></a>
+                    <a href="#"><img class="img-responsive" src="assets/img/Benar.jpg" alt="ads"/></a>
+                    <a href="#"><img class="img-responsive" src="assets/img/Benar.jpg" alt="ads"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--newsletter section-->
+<div class="container-fluid wrapper-margin-top" id="newsletter-section">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-lg-4 col-md-offset-4 col-sm-offset-4 col-lg-offset-4">
+            <p class="newsletter-title">با اشتراک در خبرنامه از آخرین عناوین آموزشی ما آگاه شوید...</p>
+        <form class="form-inline">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="ایمل خود را وارد نمایید...">
+                <span class="input-group-btn">
+                    <button class="btn btn-info"type="button">اشتراک</button>
+
+                </span>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+<!-- Footer Section-->
+<div class="container-fluid" id="footer-section">
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-aboutus"><p>درباره ما</p></div>
+<p class="aboutus-text">
+    گیرین سایت مرجعی تخصصی برای یادگیری طراحی و برنامه نویسی است. ما در گرین سایت با بهره گیری از نیروهای متخصص،با تجربه و با تحصیلات آکادمیک بالا، تمام تلاش خود را برای تهیه و تولید آموزش های با کیفیت و حرفه ای انجام می دهیم،پشنهاد می کنم تا حرفه ای شدن با گرین سایت باشد!
+</p>
+        </div>
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-sign"><p>نماد ها</p></div>
+            <ul class="list-inline" id="nemad-style">
+                <li><a href="#"><img src="assets/img/Bar_Code.png" height="100" width="100"/></a></li>
+                <li><a href="#"><img src="assets/img/WESS.png" height="100" width="100"/> </a></li>
+                <li><a href="#"><img src="assets/img/ghrja.png" height="100" width="100"/> </a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 col-sm-4 padding-reset" >
+            <div id="footer-commant"><p>نظرات کاربران</p></div>
+            <div id="footer-comment-slider" class="carousel slide"  data-ride="carousel">
+                <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-circle user-avarar margin-center" src="assets/img/user.jpg" width="40" height="40"/>
+                    <p class="slider-random-comment">
+                        دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                    </p>
+                </div>
+                    <div class="item">
+                        <img class="img-circle user-avarar margin-center" src="assets/img/a.jpg" width="40" height="40"/>
+                        <p class="slider-random-comment">
+                            دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img class="img-circle user-avarar margin-center" src="assets/img/user.jpg" width="40" height="40"/>
+                        <p class="slider-random-comment">
+                            دوره بسیار عالی و مورد نیاز برای طراحی سایت های واکنش گرا واقعا دوره خوب ولازمی بود من خیلی استفاده کردم
+                        </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <row>
+            <div class="col-md-12 col-sm-12 col-lg-12 padding-reset">
+                <p class="copy-right-text">
+                    <i class="material-icons">copyright</i>
+                    کلیه حقوق محصولات و محتوای این سایت متعلق به گرین سایت می باشد و هر گونه کپی برداری از محتوا و محصولات سایت غیر مجاز و بدون رضایت ماست.
+                </p>
+            </div>
+        </row>
+    </div>
+</div>
+<script src="assets/js/js.js"></script>
+</body>
+</html>

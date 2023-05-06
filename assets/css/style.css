@@ -1,0 +1,78 @@
+@import "Section-styles/top-menu.css";
+@import "Section-styles/new-random-topic.css";
+@import "Section-styles/main-content.css";
+@import "Section-styles/course-slidebar.css";
+@import "Section-styles/newsletter.css";
+@import "Section-styles/footer.css";
+@import "Section-styles/side-nav.css";
+@import "Section-styles/single-page.css";
+@import "Section-styles/all-post.css";
+@import "Section-styles/course.css";
+@import "Section-styles/login-registration.css";
+@import "Section-styles/profile.css";
+/*@font-face{
+    font-family:'isans';
+    src:url(../assets/fonts/isans.woff)format('woff');
+}*/
+@font-face{
+    font-family:'Byekan';
+    src: url(../fonts/Byekan.woff) format('woff');
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'glyphicon';
+    src: url("../fonts/glyphicons-halflings-regular.woff")format('woff');
+}
+@font-face {
+    font-family: 'fa-solid-900';
+    src: url("../fonts/fa-solid-900.woff")format('woff');
+}
+body{
+    background: #fbfbfb;
+   /* background: url("../img/bg-pattern.png")repeat;
+*/}
+ul,li{
+    list-style:none;
+}
+.wrapper-margin-top{
+    margin-top: 20px;
+}
+.padding-reset{
+    padding: 0px;
+}
+#hero-header{
+    background: url("../img/bg.jpg") no-repeat scroll center center/cover;
+    min-height: 600px;
+    margin-top: 1px;
+}
+.user-avarar{
+    border:1px solid #dbe3ff;
+    padding: 6px;
+}
+.margin-center{
+    margin: 0 auto;
+}
+.main-wrapper{
+    background: #ffffff;
+
+}
+.main-content{
+    box-shadow: 0 0 2px 0;
+}
+.wrapper-free-styles{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 1px 1px 2px 0px #efefef;
+    border: 1px solid #efefef;
+    background: #fff;
+
+}
+.box-shadow{
+    box-shadow: 0px 0px 3px 2px #efefef;
+}
+/* */

@@ -1,0 +1,165 @@
+/*course-header*/
+.course-landing-layer{
+    background: url("../../img/background.jpg")no-repeat center center/cover;
+    min-height: 250px;
+    border-bottom: 3px solid #ff000a;
+}
+.course-landing-layer h1{
+    font-size: 28px;
+    padding-top: 80px;
+}
+.course-landing-layer h1 a{
+    color: #fff;
+}
+.course-landing-layer h1 a i{
+    color: #fff;
+    font-size: 60px;
+    vertical-align: -25px;
+    margin-left: 11px;
+}
+.course-landing-layer h1 a:hover{
+    color: #04afff;
+}
+#course-landing-layer-container{
+    padding: 0px;
+    text-align: center;
+    text-shadow: 1px 4px 7px #000;
+}
+.course-detail-title{
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #efefef;
+    padding: 15px;
+}
+.course-detail-title i{
+    font-size: 38px;
+    vertical-align: -15px;
+    margin-left: 6px;
+    color: #ff8b8b;
+
+}
+.nav-tab-course li{
+    width: 32.5%;
+}
+.nav-tab-course li a{
+    text-align: center;
+    font-size: 16px!important;
+}
+.course-parts li{
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    border: 1px solid #efefef;
+    padding: 10px;
+    border-radius: 3px;
+    transition:50ms;
+}
+.course-parts li:hover{
+    padding-right: 13px;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.course-parts{
+    padding:0px;
+}
+.course-parts li::before{
+    content: counter(step-counter);
+    margin-left: 15px;
+    font-size: 16px;
+    background: #735cff;
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius:3px
+}
+.part-duration{
+    float: left;
+    background: #f9f9f9;
+    padding: 0 13px;
+    color: #8285ff;
+    font-size: 13px;
+    border-bottom: 1px solid #8285ff;
+    border-radius: 3px;
+}
+#student-name li{
+    border:1px solid #efefef;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #ffa2a2;
+    color: #fff;
+    border-bottom: 3px solid #ff2f2f;
+    margin-bottom: 20px;
+}
+/*course detail sidebar*/
+#course-detail-sedebar,#teacher-resume,#prerequisite-course{
+    padding: 25px 20px 15px 15px;
+}
+#course-detail-sedebar p,#teacher-resume p,#prerequisite-course p{
+    text-align: center;
+    padding: 6px 0 15px 0;
+    margin: 0 33px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #565656;
+    border-bottom: 1px solid #efefef;
+}
+#course-detail-sedebar ul li span{
+    float: left;
+}
+.course-start-time,.course-status{
+    color: #08d008;
+}
+#course-detail-sedebar ul{
+    padding-top: 20px;
+    line-height: 37px;
+    font-size: 14px;
+    font-weight: bold;;
+    color: #565656;
+}
+#course-detail-sedebar ul li i{
+    vertical-align: -10px;
+    font-size: 27px;
+    margin-left: 5px;
+    color: #b19cff;
+}
+.course-discount{
+    background:#f00;
+    text-align: center;
+    padding: 8px 0;
+    margin:0 60px 28px;
+    border-radius:9px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.course-price{
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8896ff;
+}
+.main-price{
+    margin-left: 12px;
+    color: #ff0003;
+}
+#teacher-resume{
+    margin-top: 20px;
+}
+.course-teacher,#prerequisite-course{
+    margin: 20px 0;
+}
+.course-teacher img{
+    margin: 0 auto;
+    box-shadow: 0 1px 7px #7d7d7d;
+}
+.course-teacher-name{
+    font-weight: bold;
+    font-size: 15px;
+}
+.about-teacher,.prerequisite{
+    line-height: 32px;
+    text-align: justify;
+    margin-top: 15px;
+    display: block;
+}
